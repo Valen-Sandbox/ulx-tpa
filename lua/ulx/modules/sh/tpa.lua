@@ -109,6 +109,6 @@ function ulx.tpa( ply, target )
 end
 
 local tpa = ulx.command( CATEGORY_NAME, "ulx tpa", ulx.tpa, "!tpa" )
-tpa:addParam{ type = ULib.cmds.PlayerArg }
+tpa:addParam{ type = ULib.cmds.PlayerArg, target = "!^" }
 tpa:defaultAccess( ULib.ACCESS_ALL )
 tpa:help( "Send a teleport request to the target player." )
